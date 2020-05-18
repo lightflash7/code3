@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QImage, QPixmap
 from myform import Ui_Form
-from my_save_form import Save_ui_Form
+
 
 
 class Demo(QWidget, Ui_Form):
@@ -66,6 +66,8 @@ class Demo(QWidget, Ui_Form):
     # 保存图片
     def savePhoto(self):
         self.save_photo_flag = True
+
+
 
 
 
