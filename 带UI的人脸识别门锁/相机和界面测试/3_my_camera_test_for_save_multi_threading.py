@@ -4,10 +4,10 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QImage, QPixmap
 from myform import Ui_Form
-from my_save_model import Save_demo
+from my_save_model_multi_threading import Save_demo_multithread
 
 
-# 注：如果不用QDialog的exec_方法，原镜头图像是可以动态一直更新的
+# 待解决
 class Demo(QWidget, Ui_Form):
     def __init__(self):
         super(Demo, self).__init__()
@@ -18,7 +18,7 @@ class Demo(QWidget, Ui_Form):
         self.slot_init()
         self.save_photo_flag = False
         self.save_button.setEnabled(False)
-        self.save_ui = Save_demo()
+        self.save_ui = Save_demo_multithread()
 
 
     def slot_init(self):
@@ -33,7 +33,8 @@ class Demo(QWidget, Ui_Form):
         if self.save_photo_flag:
             self.save_ui.image = self.image
             self.save_ui.show_picture()
-            self.save_ui.exec_()
+            self.save_ui.start()
+            print("ok")
             self.save_photo_flag = False
         show = cv2.resize(self.image, None, fx=1.3, fy=1.3, interpolation=cv2.INTER_CUBIC)
         show = cv2.cvtColor(show, cv2.COLOR_BGR2RGB)

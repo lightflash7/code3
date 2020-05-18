@@ -8,7 +8,8 @@ from PyQt5.QtGui import QImage, QPixmap
 
 
 class Save_demo(QDialog, Save_ui_Form):
-    image=''
+    image = ''
+
     def __init__(self):
         super(Save_demo, self).__init__()
         self.setupUi(self)

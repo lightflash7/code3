@@ -5,9 +5,13 @@ from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QImage, QPixmap
 from myform import Ui_Form
 from my_save_model import Save_demo
+from threading import Thread
+import time
 
 
-# 注：如果不用QDialog的exec_方法，原镜头图像是可以动态一直更新的
+# 待解决
+# 好像如果用的是Qdialog的exec_方法，就会阻塞住原来QWidget的变化，开了多线程也不行
+# 这里写了一个计数程序,放在一个线程中，来体现上一句话
 class Demo(QWidget, Ui_Form):
     def __init__(self):
         super(Demo, self).__init__()
@@ -33,7 +37,11 @@ class Demo(QWidget, Ui_Form):
         if self.save_photo_flag:
             self.save_ui.image = self.image
             self.save_ui.show_picture()
-            self.save_ui.exec_()
+            add_thread = Thread(target=self.count)
+            add_thread.start()
+            ui_thread = Thread(target=self.save_ui.exec_)
+            ui_thread.run()
+            print("ok")
             self.save_photo_flag = False
         show = cv2.resize(self.image, None, fx=1.3, fy=1.3, interpolation=cv2.INTER_CUBIC)
         show = cv2.cvtColor(show, cv2.COLOR_BGR2RGB)
@@ -72,6 +80,14 @@ class Demo(QWidget, Ui_Form):
     # 保存图片
     def savePhoto(self):
         self.save_photo_flag = True
+
+    def count(self):
+        i = 0
+        while i < 100:
+            print(i)
+            i += 1
+            time.sleep(1)
+
 
 
 
