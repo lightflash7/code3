@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QImage, QPixmap
 from myform import Ui_Form
+from my_save_model import Save_demo
 
 
 
@@ -16,6 +17,8 @@ class Demo(QWidget, Ui_Form):
         self.CAM_NUM = 0
         self.slot_init()
         self.save_photo_flag = False
+        self.save_button.setEnabled(False)
+        self.save_ui = Save_demo()
 
 
     def slot_init(self):
@@ -28,8 +31,9 @@ class Demo(QWidget, Ui_Form):
     def show_camera(self):
         flag, self.image = self.cap.read()
         if self.save_photo_flag:
-            cv2.imwrite("myphoto.jpg", self.image)
-            QMessageBox.information(self, ' ', '图片保存成功!')
+            self.save_ui.image = self.image
+            self.save_ui.show_picture()
+            self.save_ui.exec_()
             self.save_photo_flag = False
         show = cv2.resize(self.image, None, fx=1.3, fy=1.3, interpolation=cv2.INTER_CUBIC)
         show = cv2.cvtColor(show, cv2.COLOR_BGR2RGB)
@@ -41,9 +45,11 @@ class Demo(QWidget, Ui_Form):
         if self.timer_camera.isActive() == False:
             # 打开摄像头并显示图像信息
             self.openCamera()
+            self.save_button.setEnabled(True)
         else:
             # 关闭摄像头并清空显示信息
             self.closeCamera()
+            self.save_button.setEnabled(False)
 
     # 打开摄像头
     def openCamera(self):
