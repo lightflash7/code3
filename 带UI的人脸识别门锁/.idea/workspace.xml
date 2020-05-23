@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9095c7-f7ae-4fee-9359-36aa7b88ecbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/相机和界面测试/2_my_camera_test_for_save_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/相机和界面测试/2_my_camera_test_for_save_ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/相机和界面测试/my_save_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/相机和界面测试/my_save_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/lock.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +24,7 @@
   <component name="ProjectId" id="1bnL1upVKPj5gEQFfRVjNOGvN6t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -42,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.3_my_camera_test_for_save_multi_threading">
+  <component name="RunManager" selected="Python.Myface_recognition">
     <configuration name="2_my_camera_test_for_save_ui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="带UI的人脸识别门锁" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_camera_test_for_save_ui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Myface_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="带UI的人脸识别门锁" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,12 +138,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/相机和界面测试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/人脸检测测试" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\code3\带UI的人脸识别门锁\相机和界面测试\2_my_camera_test_for_save_ui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/人脸检测测试/Myface_recognition.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Myface_recognition" />
         <item itemvalue="Python.3_my_camera_test_for_save_multi_threading" />
         <item itemvalue="Python.4_my_camera_test_for_multithread_2" />
         <item itemvalue="Python.2_my_camera_test_for_save_ui" />
         <item itemvalue="Python.4_my" />
-        <item itemvalue="Python.my_camera_test_for_save_ui" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +179,8 @@
       <workItem from="1589728569807" duration="429000" />
       <workItem from="1589729064668" duration="1466000" />
       <workItem from="1589772410385" duration="8225000" />
-      <workItem from="1589816388666" duration="1925000" />
+      <workItem from="1589816388666" duration="2205000" />
+      <workItem from="1590223494568" duration="2853000" />
     </task>
     <servers />
   </component>
@@ -192,7 +192,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -219,6 +221,7 @@
     <SUITE FILE_PATH="coverage/UI$my_save_model.coverage" NAME="my_save_model Coverage Results" MODIFIED="1589777699189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
     <SUITE FILE_PATH="coverage/UI$3_my_camera_test_for_save_multi_threading.coverage" NAME="3_my_camera_test_for_save_multi_threading Coverage Results" MODIFIED="1589818340688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
     <SUITE FILE_PATH="coverage/UI$Ui_CameraPage.coverage" NAME="Ui_CameraPage Coverage Results" MODIFIED="1589263153050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UI$Myface_recognition.coverage" NAME="Myface_recognition Coverage Results" MODIFIED="1590226428432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人脸检测测试" />
     <SUITE FILE_PATH="coverage/UI$4_my.coverage" NAME="4_my Coverage Results" MODIFIED="1589817128601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
     <SUITE FILE_PATH="coverage/UI$4_my_camera_test_for_multithread_2.coverage" NAME="4_my_camera_test_for_multithread_2 Coverage Results" MODIFIED="1589818116152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
   </component>
