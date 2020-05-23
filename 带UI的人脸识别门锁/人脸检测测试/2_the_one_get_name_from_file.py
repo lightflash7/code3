@@ -1,6 +1,8 @@
-import face_recognition
+from ast import literal_eval
 import cv2
+import face_recognition
 import numpy as np
+from PIL import Image, ImageFont, ImageDraw
 
 
 class Face_recognition:
@@ -13,24 +15,24 @@ class Face_recognition:
     def turn_on_camera(self):
         self.video_capture = cv2.VideoCapture(0)
 
-    def load_known_face(self):
-        # Load a sample picture and learn how to recognize it.
-        obama_image = face_recognition.load_image_file("obama.jpg")
-        obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+    def save_people_to_file(self):
+        f = open('./photos_of_people/people.txt',"w")
+        f.writelines(str(self.known_face_names))
+        f.close()
+        pass
 
-        # Load a second sample picture and learn how to recognize it.
-        biden_image = face_recognition.load_image_file("biden.jpg")
-        biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+    def load_peole_from_file(self):
+        f = open('./photos_of_people/people.txt',"r")
+        self.known_face_names = literal_eval(f.readline())
+        f.close()
 
-        # Create arrays of known face encodings and their names
-        self.known_face_encodings = [
-            obama_face_encoding,
-            biden_face_encoding
-        ]
-        self.known_face_names = [
-            "Barack Obama",
-            "Joe Biden"
-        ]
+    def get_known_face_encoding(self):
+        self.known_face_encodings=[]
+        for person in self.known_face_names:
+            filename = './photos_of_people/'+person+'.jpg'
+            person_image = face_recognition.load_image_file(filename)
+            person_face_encoding = face_recognition.face_encodings(person_image)[0]
+            self.known_face_encodings.append(person_face_encoding)
 
     def face_recognition(self):
         # Grab a single frame of video
@@ -52,7 +54,7 @@ class Face_recognition:
             for face_encoding in self.face_encodings:
                 # See if the face is a match for the known face(s)
                 matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
-                name = "Unknown"
+                name = "未知"
 
                 # # If a match was found in known_self.face_encodings, just use the first one.
                 # if True in matches:
@@ -83,17 +85,25 @@ class Face_recognition:
             # Draw a label with a name below the face
             cv2.rectangle(self.frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
-            cv2.putText(self.frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+            # cv2.putText(self.frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+            fontpath = "./font/simsun.ttc"  # 宋体字体文件
+            font_1 = ImageFont.truetype(fontpath, 30)  # 加载字体, 字体大小
+            img_pil = Image.fromarray(self.frame)
+            draw = ImageDraw.Draw(img_pil)
+            draw.text((left + 10, bottom - 32), name, font=font_1, fill=(255, 255, 255))  # xy坐标, 内容, 字体, 颜色
+            self.frame = np.array(img_pil)
 
         # Display the resulting image
-        cv2.imshow('Video', self.frame)
+        cv2.imshow('Camera', self.frame)
         cv2.waitKey(1)
 
 
 if __name__ == '__main__':
     my_face_recognition = Face_recognition()
     my_face_recognition.turn_on_camera()
-    my_face_recognition.load_known_face()
+    # my_face_recognition.load_known_face()
+    my_face_recognition.load_peole_from_file()
+    my_face_recognition.get_known_face_encoding()
     while True:
         my_face_recognition.face_recognition()
         my_face_recognition.show_on_screen()
