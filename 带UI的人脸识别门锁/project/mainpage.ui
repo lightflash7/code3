@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>960</x>
-     <y>540</y>
+     <y>330</y>
      <width>121</width>
      <height>51</height>
     </rect>
@@ -48,9 +48,9 @@
   <widget class="QLabel" name="message">
    <property name="geometry">
     <rect>
-     <x>970</x>
+     <x>950</x>
      <y>90</y>
-     <width>131</width>
+     <width>151</width>
      <height>61</height>
     </rect>
    </property>
@@ -62,6 +62,44 @@
    </property>
    <property name="text">
     <string>欢迎^_^</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="unlock_button">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>520</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>点此开锁</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delect_button">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>400</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>删减成员</string>
    </property>
   </widget>
  </widget>

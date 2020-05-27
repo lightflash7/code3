@@ -34,9 +34,28 @@ class Face_recognition:
             person_face_encoding = face_recognition.face_encodings(person_image)[0]
             self.known_face_encodings.append(person_face_encoding)
 
+    # 检测目录下是否为空,空则返回True，否则返回False
+    def is_dir_empty(self):
+        dir = './photos_of_people'
+        suffix = '.jpg'
+        res = []
+        for root, directory, files in os.walk(dir):  # 当前目录下的文件
+            for filename in files:
+                name, suf = os.path.splitext(filename)  # 文件名,文件后缀
+                if suf == suffix:
+                    res.append(filename.split(".")[0])
+        if res:
+            return False
+        else:
+            return True
+
+
     def face_recognition(self):
         # Grab a single frame of video
         self.ret, self.frame = self.video_capture.read()
+
+        # 记录识别人数
+        self.count = 0
 
         # Resize frame of video to 1/4 size for faster face recognition processing
         small_frame = cv2.resize(self.frame, (0, 0), fx=0.25, fy=0.25)
@@ -67,12 +86,18 @@ class Face_recognition:
                     best_match_index = np.argmin(face_distances)
                     if matches[best_match_index]:
                         name = self.known_face_names[best_match_index]
+                        self.count += 1
                 except:
                     pass
 
                 self.face_names.append(name)
 
         self.process_this_frame = not self.process_this_frame
+
+    # 返回当前镜头中已识别的人数
+    def found_known_people_number(self):
+        return self.count
+
 
     def add_mark(self):
         for (top, right, bottom, left), name in zip(self.face_locations, self.face_names):

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1d9095c7-f7ae-4fee-9359-36aa7b88ecbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/1_main_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/1_main_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mainpage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/project/mainpage.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mainpage_form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/myface_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/myface_recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/save_page.ui" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +188,8 @@
       <workItem from="1590223494568" duration="2853000" />
       <workItem from="1590226360363" duration="6142000" />
       <workItem from="1590233169132" duration="8759000" />
-      <workItem from="1590246298154" duration="3397000" />
+      <workItem from="1590246298154" duration="3554000" />
+      <workItem from="1590558411126" duration="6467000" />
     </task>
     <servers />
   </component>
@@ -215,7 +221,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UI$1_main_project.coverage" NAME="1_main_project Coverage Results" MODIFIED="1590249357214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/UI$1_main_project.coverage" NAME="1_main_project Coverage Results" MODIFIED="1590564890611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$3_the_one_get_name_from_dir.coverage" NAME="3_the_one_get_name_from_dir Coverage Results" MODIFIED="1590233009720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人脸检测测试" />
     <SUITE FILE_PATH="coverage/UI$call_camera.coverage" NAME="call_camera Coverage Results" MODIFIED="1589263676459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UI$mycamera_test.coverage" NAME="mycamera_test Coverage Results" MODIFIED="1589298582602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
