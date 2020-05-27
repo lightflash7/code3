@@ -8,6 +8,7 @@ from my_save_model import Save_demo
 from myface_recognition import Face_recognition
 # from mylock import MyLock
 from threading import Thread
+from delete_model import DeletePage
 
 
 # 注：如果不用QDialog的exec_方法，原镜头图像是可以动态一直更新的
@@ -31,7 +32,7 @@ class Demo(QWidget, Ui_Form):
 
         self.save_button_init()
         self.unlock_button_init()
-        self.delect_button_init()
+        self.delete_button_init()
         self.activation_timer_init()
 
         self.recognition_thread = Thread(target=self.run_face_recognition)
@@ -43,6 +44,7 @@ class Demo(QWidget, Ui_Form):
         self.save_button.clicked.connect(self.savePhoto)
         self.activation_timer.timeout.connect(self.deactivate_button)
         self.start_timer_signal.connect(self.start_timer)
+        self.delete_button.clicked.connect(self.go_delete_photo)
 
     def save_button_init(self):
         # 如果没有保存人，则保存按键可以点击，否则不能点击
@@ -54,8 +56,8 @@ class Demo(QWidget, Ui_Form):
     def unlock_button_init(self):
         self.unlock_button.setEnabled(False)
 
-    def delect_button_init(self):
-        self.delect_button.setEnabled(False)
+    def delete_button_init(self):
+        self.delete_button.setEnabled(False)
 
     def activation_timer_init(self):
         self.activation_timer.setSingleShot(True)
@@ -94,6 +96,7 @@ class Demo(QWidget, Ui_Form):
         self.save_ui.image = self.photo_to_save
         self.save_ui.show_picture()
         self.save_ui.exec_()
+        # 刷新已经记录的人
         self.reload_people()
 
     def reload_people(self):
@@ -106,15 +109,23 @@ class Demo(QWidget, Ui_Form):
     def activate_button(self):
         if not self.activation_timer.isActive():
             self.save_button.setEnabled(True)
-            self.delect_button.setEnabled(True)
+            self.delete_button.setEnabled(True)
             self.unlock_button.setEnabled(True)
             self.message.setText("认证成功")
 
     def deactivate_button(self):
         self.save_button.setEnabled(False)
-        self.delect_button.setEnabled(False)
+        self.delete_button.setEnabled(False)
         self.unlock_button.setEnabled(False)
         self.message.setText("欢迎^_^")
+
+    def go_delete_photo(self):
+        delete_page = DeletePage()
+        delete_page.exec_()
+        # 刷新已经记录的人
+        self.reload_people()
+        # 检测人是否空了，如果空了，要允许保存
+        self.save_button_init()
 
 
 if __name__ == '__main__':

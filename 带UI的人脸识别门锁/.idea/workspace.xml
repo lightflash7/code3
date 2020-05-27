@@ -4,10 +4,7 @@
     <list default="true" id="1d9095c7-f7ae-4fee-9359-36aa7b88ecbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/1_main_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/1_main_project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mainpage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/project/mainpage.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mainpage_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/myface_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/myface_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/save_page.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mainpage_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mainpage_form.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +66,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_my_camera_test_for_save_ui (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3_the_one_get_name_from_dir" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="带UI的人脸识别门锁" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,12 +74,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/相机和界面测试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/人脸检测测试" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/相机和界面测试/2_my_camera_test_for_save_ui.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/人脸检测测试/3_the_one_get_name_from_dir.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -91,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_save_form" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="delect_form" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="带UI的人脸识别门锁" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,7 +101,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/my_save_form.py" />
+      <option name="SCRIPT_NAME" value="F:\code3\带UI的人脸识别门锁\project\delete_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="delete_form" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="带UI的人脸识别门锁" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="F:\code3\带UI的人脸识别门锁\project\delete_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,35 +154,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myface_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="带UI的人脸识别门锁" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/myface_recognition.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.1_main_project" />
+        <item itemvalue="Python.delete_form" />
+        <item itemvalue="Python.delect_form" />
+        <item itemvalue="Python.3_the_one_get_name_from_dir" />
         <item itemvalue="Python.my_save_model" />
-        <item itemvalue="Python.myface_recognition" />
-        <item itemvalue="Python.my_save_form" />
-        <item itemvalue="Python.2_my_camera_test_for_save_ui (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +186,8 @@
       <workItem from="1590226360363" duration="6142000" />
       <workItem from="1590233169132" duration="8759000" />
       <workItem from="1590246298154" duration="3554000" />
-      <workItem from="1590558411126" duration="6467000" />
+      <workItem from="1590558411126" duration="14134000" />
+      <workItem from="1590575193403" duration="595000" />
     </task>
     <servers />
   </component>
@@ -221,10 +219,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UI$1_main_project.coverage" NAME="1_main_project Coverage Results" MODIFIED="1590564890611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
-    <SUITE FILE_PATH="coverage/UI$3_the_one_get_name_from_dir.coverage" NAME="3_the_one_get_name_from_dir Coverage Results" MODIFIED="1590233009720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人脸检测测试" />
+    <SUITE FILE_PATH="coverage/UI$1_main_project.coverage" NAME="1_main_project Coverage Results" MODIFIED="1590575902982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/UI$3_the_one_get_name_from_dir.coverage" NAME="3_the_one_get_name_from_dir Coverage Results" MODIFIED="1590567217365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人脸检测测试" />
     <SUITE FILE_PATH="coverage/UI$call_camera.coverage" NAME="call_camera Coverage Results" MODIFIED="1589263676459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UI$mycamera_test.coverage" NAME="mycamera_test Coverage Results" MODIFIED="1589298582602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UI$delect_form.coverage" NAME="delect_form Coverage Results" MODIFIED="1590573848212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$3_my_camera_test_for_save_multi_threading.coverage" NAME="3_my_camera_test_for_save_multi_threading Coverage Results" MODIFIED="1589818340688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
     <SUITE FILE_PATH="coverage/UI$my_save_model.coverage" NAME="my_save_model Coverage Results" MODIFIED="1590248148064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$opencv_test.coverage" NAME="opencv_test Coverage Results" MODIFIED="1589297652374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -233,6 +232,7 @@
     <SUITE FILE_PATH="coverage/UI$2_the_one_get_name_from_file.coverage" NAME="2_the_one_get_name_from_file Coverage Results" MODIFIED="1590244508666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人脸检测测试" />
     <SUITE FILE_PATH="coverage/UI$mycamera_test__1_.coverage" NAME="mycamera_test (1) Coverage Results" MODIFIED="1589777564908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
     <SUITE FILE_PATH="coverage/UI$2_my_camera_test_for_save_ui__1_.coverage" NAME="2_my_camera_test_for_save_ui (1) Coverage Results" MODIFIED="1590244537483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/相机和界面测试" />
+    <SUITE FILE_PATH="coverage/UI$delete_form.coverage" NAME="delete_form Coverage Results" MODIFIED="1590574145781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$my_save_form.coverage" NAME="my_save_form Coverage Results" MODIFIED="1590247559573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$myface_recognition.coverage" NAME="myface_recognition Coverage Results" MODIFIED="1590247566303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/UI$Ui_CameraPage.coverage" NAME="Ui_CameraPage Coverage Results" MODIFIED="1589263153050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
