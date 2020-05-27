@@ -70,9 +70,8 @@ class Demo(QWidget, Ui_Form):
             # 检测是否有识别出的任务，有则运行按键按下
             self.count = self.myrecognition.found_known_people_number()
             if self.count != 0:
-                if not self.activation_timer.isActive():
-                    self.activate_button()
-                    self.start_timer_signal.emit()
+                self.activate_button()
+                self.start_timer_signal.emit()
             # 检测是否按下保存
             if self.save_photo_flag:
                 self.photo_to_save = self.myrecognition.frame.copy()
@@ -104,7 +103,7 @@ class Demo(QWidget, Ui_Form):
         self.myrecognition.get_known_face_from_dir()
 
     def start_timer(self):
-        self.activation_timer.start(3000)
+        self.activation_timer.start(4000)
 
     def activate_button(self):
         if not self.activation_timer.isActive():
@@ -114,7 +113,10 @@ class Demo(QWidget, Ui_Form):
             self.message.setText("认证成功")
 
     def deactivate_button(self):
-        self.save_button.setEnabled(False)
+        if self.myrecognition.is_dir_empty():
+            self.save_button.setEnabled(True)
+        else:
+            self.save_button.setEnabled(False)
         self.delete_button.setEnabled(False)
         self.unlock_button.setEnabled(False)
         self.message.setText("欢迎^_^")
@@ -125,7 +127,8 @@ class Demo(QWidget, Ui_Form):
         # 刷新已经记录的人
         self.reload_people()
         # 检测人是否空了，如果空了，要允许保存
-        self.save_button_init()
+        if self.myrecognition.is_dir_empty():
+            self.save_button.setEnabled(True)
 
 
 if __name__ == '__main__':
