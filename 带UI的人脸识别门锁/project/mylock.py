@@ -19,7 +19,7 @@ class MyLock:
         GPIO.output(self.lock, GPIO.HIGH)
         time.sleep(1.7)
         GPIO.output(self.lock, GPIO.LOW)
-        GPIO.cleanup()
+        # GPIO.cleanup()
 
 
 if __name__ == '__main__':
